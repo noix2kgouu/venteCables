@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+    <title>Ma Super Entreprise</title>
+    <link rel="stylesheet" href="style.css">
+    <!--lien vers la feuille de style-->
+</head>
+
+<body>
+    <!-- HEADER -- HEADER -- HEADER -- HEADER -- HEADER -- HEADER -->
+    <header>
+        <!-- TOP -->
+        <img id="logo" src="medias/images/myLogo.png" alt="logo du site">
+        <form action="#" id="search">
+            <input type="text" id="search" name="search" placeholder="Chercher un produit">
+        </form>
+        <img id="panier" src="medias/images/panier2.png" alt="panier de l'utilisateur">
+    </header>
+
+    <ul id="navbar">
+        <!-- NAVBAR -->
+        <li><a class="notright" href="#">tous les produits</a></li>
+        <li><a class="active notright" href="#">réseau</a></li>
+        <li><a class="notright" href="#">composants</a></li>
+        <li><a class="right" href="#">périphériques</a></li>
+    </ul>
+    <!-- HEADER -- HEADER -- HEADER -->
+
+
+    <div id="corp">
+        <!-- BANNER -- BANNER -- BANNER -- BANNER -- BANNER -- BANNER -->
+        <div class="containing">
+            <img id="banner" src="medias/images/network.jpg" alt="bannière du site, image appareil électronique">
+            <div class="title">Réseau</div>
+        </div>
+        <!-- BANNER -- BANNER -- BANNER -->
+
+
+        <!-- FILTRES -- FILTRES -- FILTRES -- FILTRES -- FILTRES -- FILTRES -->
+        <section id="characteristic">
+            <p id="recherche">Recherche</p>
+            <div id="formulaire">
+                <form action="#">
+                    <div class="formu">
+                        <!-- LONGUEUR-->
+                        <p>Longueur</p>
+                        <div class="formutype">
+                            <label for="lmin">Min</label>
+                            <input type="number" id="lmin" name="lmin" placeholder="cm" size="1px">
+                        </div>
+                        <div class="formutype">
+                            <label for="lmax">Max</label>
+                            <input type="number" id="lmax" name="lmax" placeholder="cm" size="3px">
+                        </div>
+                    </div>
+
+                    <div class="formu">
+                        <!-- PRIX-->
+                        <p>Prix</p>
+                        <div class="formutype">
+                            <label for="pmin">Min</label>
+                            <input type="number" id="pmin" name="pmin" placeholder="€" size="3px">
+                        </div>
+                        <div class="formutype">
+                            <label for="pmax">Max</label>
+                            <input type="number" id="pmax" name="pmax" placeholder="€" size="3px">
+                        </div>
+                    </div>
+
+                    <div class="formucheck" id="categorie">
+                        <!-- CATEGORIE-->
+                        <p>Catégorie</p>
+                        <div>
+                            <input type="checkbox" id="cat4" name="cat4" value="cat4">
+                            <label for="cat4">CAT4</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="cat5" name="cat5" value="cat5">
+                            <label for="cat5">CAT5</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="cat6" name="cat6" value="cat6">
+                            <label for="cat6">CAT6</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="cat8" name="cat8" value="cat8">
+                            <label for="cat8">CAT8</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- FILTRES -- FILTRES -- FILTRES -->
+
+        <!-- PRODUITS -- PRODUITS -- PRODUITS -- PRODUITS -- PRODUITS -- PRODUITS -->
+        <section id="pageproduits">
+            <!--<article class="produits">
+                <div>
+                    <img src="medias/images/ethernet.jpg" alt="" width="100%">
+                </div>
+                <div class="infos">
+                    <p class="name strong">Câble ethernet RJ54</p>
+                    <p class="caracproduits">1,5 mètres, CAT 6</p>
+                    <p class="price strong">9€00</p>
+                </div>
+                <button class="addpanier" type="button" onclick="window.location.href = 'https://google.fr';">Ajouter au
+                    panier</button>
+            </article>-->
+
+
+            <article id="numpages">
+                <div class="fakecercle"><a href="#" class="black">&lt;</a></div>
+                <div class="cercle"><a href="#" class="black">1</a></div>
+                <div class="activepage"><a href="#" class="white">2</a></div>
+                <div class="cercle"><a href="#" class="black">3</a></div>
+                <div class="fakecercle">
+                    <p class="black">&hellip;</p>
+                </div>
+                <div class="cercle"><a href="#" class="black">14</a></div>
+                <div class="cercle"><a href="#" class="black">15</a></div>
+                <div class="cercle"><a href="#" class="black">16</a></div>
+                <div class="fakecercle"><a href="#" class="black">&gt;</a></div>
+            </article>
+
+        </section>
+
+    </div>
+    <footer>
+        <p>Les photos des articles ne sont pas contractuelles.</p>
+        <hr>
+        <section id="footerinfos">
+            <div id="servicesaide" class="parts">
+                <h1>services d'aide</h1>
+                <hr>
+                <div class="links">
+                    <a href="#">FAQ</a>
+                    <a href="#">Montage de pc</a>
+                    <a href="#">Garanties</a>
+                    <a href="#">SAV</a>
+                </div>
+            </div>
+            <div id="notreentreprise" class="parts">
+                <h1>qui sommes nous ?</h1>
+                <hr>
+                <div class="links">
+                    <a href="#">L'entreprise</a>
+                    <a href="#">Le groupe</a>
+                    <a href="#">CGV</a>
+                    <a href="#">CGU</a>
+                    <a href="#">Mentions légales</a>
+                </div>
+            </div>
+            <div id="nousrejoindre" class="parts">
+                <h1>nous rejoindre</h1>
+                <hr>
+                <div class="links">
+                    <a href="#">Devenir franchisé</a>
+                    <a href="#">Recrutement</a>
+                    <a href="#">Marketplace</a>
+                </div>
+            </div>
+            <div id="contact" class="parts start">
+                <h1>nous contacter</h1>
+                <hr>
+                <div id="boutoncontact">
+                    <a href="#">
+                        <div id="butontel" class="butonfoot">
+                            <img class="logofoot" src="medias/images/email-open.png" alt="icone mail">
+                            <p>par mail</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div id="butonmail" class="butonfoot">
+                            <img class="logofoot" src="medias/images/phone.png" alt="icone tel">
+                            <p>par téléphone</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
