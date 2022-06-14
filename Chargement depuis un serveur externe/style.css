@@ -1,0 +1,785 @@
+/*POLICE--POLICE--POLICE--POLICE--POLICE--POLICE--POLICE--POLICE*/
+@font-face {
+    font-family: RobotoBlack;
+    src: url("./medias/fonts/Roboto-Black.ttf");
+}
+@font-face {
+    font-family: RobotoBold;
+    src: url("./medias/fonts/Roboto-Bold.ttf");
+}
+@font-face {
+    font-family: RobotoRegular;
+    src: url("./medias/fonts/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: RobotoLight;
+    src: url("./medias/fonts/Roboto-Light.ttf");
+}
+/*POLICE--POLICE--POLICE*/
+
+
+/*GENERAL--GENERAL--GENERAL--GENERAL--GENERAL--GENERAL--GENERAL*/
+body{
+    background-color:#d2d3d2;
+    margin: 0px;
+    font-family:RobotoRegular;
+}
+p{
+    font-size: 10px;
+    text-align: center;
+}
+a {
+    text-decoration:none;
+    color: white;
+}
+#corp {/*partie principal (filtres, articles, banniere)*/
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    justify-content: space-between;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+}
+.strong {
+    font-weight: bold;
+}
+
+/*couleur du texte - nécéssaire pour la partie numéro de page*/
+.black{
+    font-size: 15px;
+    color: black;
+}
+.white{
+    font-size: 15px;
+    color: white;
+}
+/* ------------- */
+
+/*GENERAL--GENERAL--GENERAL*/
+
+
+/*HEADER--HEADER--HEADER--HEADER--HEADER--HEADER--HEADER--HEADER*/
+header {
+    background-color: #37b18c;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+}
+#logo {
+
+    width: 12%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+#search {
+    width: 32%;
+}
+#search input {
+    width: 99%;
+    height: 30px;
+    border: none;
+    font-style: italic;
+}
+#panier {
+    width: 3%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+/*HEADER--HEADER--HEADER*/
+
+
+/*NAVBAR--NAVBAR--NAVBAR--NAVBAR--NAVBAR--NAVBAR--NAVBAR--NAVBAR*/
+#navbar{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    padding-bottom: 0;
+    padding-top: 0;
+    overflow: hidden;
+    background-color: #2f7d66;
+    display: flex;
+    text-transform:uppercase;
+}
+#navbar .notright{
+    border-right:1px solid #bbb;
+}
+#navbar li{
+    width: 25%;
+}
+#navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}  
+#navbar .active {
+    background-color: #44d5aa;
+}
+#navbar :hover {
+    background-color: #44d5aa;
+  }
+
+/*NAVBAR--NAVBAR--NAVBAR*/
+
+
+/*BANNER--BANNER--BANNER--BANNER--BANNER--BANNER--BANNER--BANNER*/
+.containing {
+    position: relative;
+    text-align:center;
+    color: white;
+    margin: 0px;
+  }
+.containing img {
+    height: 100%;
+    width: 100%;
+}
+#banner {
+    width: 100%;
+    position: relative;
+}
+.title {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-size:50px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 25px;
+    opacity: 0.70;
+}
+/*BANNER--BANNER--BANNER*/
+
+
+/*FILTRES--FILTRES--FILTRES--FILTRES--FILTRES--FILTRES--FILTRES--FILTRES*/
+#characteristic {
+    background-color: #c5ffec;
+    width: 15.68%;
+    padding: 2%;
+    margin: 0px;
+}
+.formu {
+    display: flex;    
+    flex-wrap: wrap;
+    margin-bottom: 15%;
+}
+.formu p{
+    width: 100%;
+    margin: 5px;
+    text-align: left;
+    font-size: 20px;
+}
+.formu input{
+    width: 40%;
+}
+.formutype {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+}
+.formutype label{
+    width: 100%;
+}
+.formutype input{
+    width: 60%;
+}
+.formucheck p{
+    margin: 5px;
+    text-align: left;
+    font-size: 20px;
+}
+#recherche {
+    font-size: 25px; 
+    font-weight: bold; 
+    text-align: left;
+    margin-top: 0; 
+    margin-bottom: 45px;
+}
+#formulaire {
+    font-family:RobotoLight;
+}
+/*FILTRES--FILTRES--FILTRES*/
+
+
+/*PARTIE ARTICLE--PARTIE ARTICLE--PARTIE ARTICLE--PARTIE ARTICLE--PARTIE ARTICLE--PARTIE ARTICLE--PARTIE ARTICLE*/
+#pageproduits {/*partie general*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    width:80.32%;
+    background-color: white;
+    margin: 0px;
+}
+.produits {/*articles*/
+    /*background-color: aqua;*/
+    width: 22%;
+    padding-top: 0px;
+    height: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    border-color: rgb(202, 200, 200);
+    border-style:solid;
+    border-width: 1px;
+    margin: 1%;
+    padding: 0px;
+}
+.produits .imgproduit{
+    display: flex;
+    justify-content: center;
+}
+
+/*TEXTE ARTICLE--TEXTE ARTICLE*/
+.infos{/*infos article*/
+    width: 40%;
+    margin: 5%; 
+}
+.infos .name{/*nom des articles*/
+    font-size: 15px;
+    margin: 0px;
+}
+.infos .caracproduits{/*caractèristique des articles*/
+    font-style: italic;
+    font-size: 12px;
+    margin: 0px;
+}
+.infos .price{/*prix des articles*/
+    font-size: 25px;
+    margin: 0px;
+}
+/*TEXTE ARTICLE*/
+
+/*AJOUTER AU PANIER--AJOUTER AU PANIER*/
+#pageproduits button {
+    background-color: #00b500;
+    width: 40%;
+    height: 20%;
+    color: white;
+    margin: 5%;
+    border-radius: 6px;
+    border: 0;
+    cursor: pointer;
+}
+#pageproduits button:hover {/*passage du curseur de la souris sur le bouton*/
+    background-color: green;
+  }
+/*AJOUTER AU PANIER*/
+
+
+/*NUMERO DE PAGE--NUMERO DE PAGE*/
+#numpages {/*éléments des numeros*/
+    display: flex;
+    justify-content:center;
+    color: black;
+    width: 100%;
+    margin: 3%;
+}
+.cercle {/*cercle classique*/
+    width: 37px;
+    height: 37px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.cercle:hover {/*passage du curseur*/
+    width: 37px;
+    height: 37px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    background: #44d5aa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fakecercle {/*cercle camoufflé aux extrémités*/
+    width: 37px;
+    height: 37px;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.activepage{/*pages actives*/
+    width: 38px;
+    height: 38px;
+    border-radius: 20px;
+    background: #44d5aa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 5px;
+}
+/*NUMERO DE PAGE*/
+/*PARTIE ARTICLE--PARTIE ARTICLE--PARTIE ARTICLE*/
+
+
+/*FOOTER--FOOTER--FOOTER--FOOTER--FOOTER--FOOTER--FOOTER--FOOTER*/
+footer {
+    background-color: #37b18c;
+    padding: 1px;
+    padding-bottom: 100px;
+    color: white;
+}
+footer p{
+    font-size: 15px;
+}
+footer hr{
+    width: 75%;
+    border: none;
+    border-top: 1px solid white;
+    text-align: center;
+}
+
+/*FOOTER CONTENUE PRINCIPAL*/
+#footerinfos{/*section principal*/
+    display: flex;
+    justify-content:space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.parts{/*parties du footer, réparties en 4 colonnes*/
+    text-align:left;
+    width: 15%;
+}
+.parts h1{/*titre des parties*/
+    text-transform:uppercase;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    font-size: 19px;
+}
+.parts hr{
+    margin-left: 0px;
+    margin-bottom: 17px;
+    width: 30%;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+}
+.parts a{
+    margin-bottom: 3%;
+}
+.parts a:hover{
+    text-decoration: underline;
+}
+#boutoncontact a:hover{
+    text-decoration:none;
+}
+
+/*BOUTON MAIL & TELEPHONE -- BOUTON MAIL & TELEPHONE*/
+#boutoncontact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+}
+#boutoncontact a{
+    width: 85%;
+    height:30%;
+    margin-bottom: 10%;
+}
+.butonfoot{
+    background-color: #44d5aa;
+    display: flex;
+    align-content:center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+}
+.butonfoot img{/*logos des bouttons*/
+    width: 12%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.butonfoot p{/*textes des bouttons*/
+    text-transform:uppercase;
+    text-align:left ;
+}
+.butonfoot:hover {/*passage du curseur de la souris sur le bouton*/
+    background-color: #239774;
+}
+/*BOUTON MAIL & TELEPHONE*/
+/*FOOTER--FOOTER--FOOTER*/
+
+
+
+
+/*RESPONSIVE -- RESPONSIVE -- RESPONSIVE -- RESPONSIVE*/
+
+/*
+@media screen{
+    body{
+        max-width: 2100px;
+    }
+}*/
+@media screen and (min-width: 2100px){
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header{
+        width: 100%;
+    }
+    header #logo{
+        width: auto;
+        height: 80px;
+    }
+    header #panier{
+        width: auto;
+        height: 80px;
+    }
+    #navbar {
+        width: 100%;
+        padding: 0;
+    }
+    #corp {
+        max-width: 1600px;
+        padding: 0;
+        
+    }
+    footer {
+        width: 100%;
+    }
+}
+    
+    
+
+@media screen and (min-width: 1403px) and (max-width: 1775px) {
+    #pageproduits .produits .name{
+        font-size: 12px;
+    }
+    #pageproduits .produits .caracproduits{
+        font-size: 9.6px;
+    }
+    #pageproduits .produits .price{
+        font-size: 20px;
+    }
+    #recherche{
+        font-size: 20px
+    }
+    .formu p{
+        font-size: 16px;
+    }
+    .formucheck p{
+        font-size: 16px;
+    }
+    #characteristic label{
+        font-size: 15px;
+    }
+    .parts h1{
+        font-size: 15.2px;
+    }
+    .parts a{
+        font-size: 14px;
+    }
+    .parts p{
+        font-size: 14px;
+    }
+
+    #numpages a{
+        font-size: 12px;
+    }
+    #numpages p{
+        font-size: 12px;
+    }
+    #numpages .cercle{
+
+        width: 29.6px;
+        height: 29.6px;
+    }
+    #numpages .activepage{
+
+        width: 30.4px;
+        height: 30.4px;
+    }
+    #numpages .fakecercle{
+
+        width: 29.6px;
+        height: 29.6px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1403px) {
+    #corp {
+        padding-left: 0%;
+        padding-right: 0%;
+        width: 100%;
+    }
+    #corp #characteristic {
+        width: 16%;
+        margin: 0px;
+
+    }
+    #corp #pageproduits {
+        width: 80%;
+        margin: 0px;
+    }
+    #pageproduits .produits {
+        width: 30%;
+    }
+    #navbar {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    header {
+        justify-content: space-between;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    #footerinfos {
+        padding: 0%;
+        justify-content: space-around;
+        margin: 0;
+    }
+    footer hr{
+        width: 100%;
+    }
+    .parts h1{
+        font-size: 15.2px;
+    }
+    .parts a{
+        font-size: 14px;
+    }
+    .parts p{
+        font-size: 14px;
+    }
+    #numpages a{
+        font-size: 14px;
+    }
+    #numpages p{
+        font-size: 14px;
+    }
+    #numpages .cercle{
+  
+        width: 34.5px;
+        height: 34.5px;
+    }
+    #numpages .activepage{
+
+        width: 35.4px;
+        height: 35.4px;
+    }
+    #numpages .fakecercle{
+
+        width: 34.5px;
+        height: 34.5px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+    #search {
+        width: 42%;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 850px) {
+    #pageproduits .produits {
+        width: 45%;
+    }
+    .formutype {
+        width: 100%;
+    }
+    #recherche {
+        font-size: 20px;
+    }
+    #boutoncontact a{
+        width: 100%;
+    }
+    #search {
+        width: 48%;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 738px) {
+    #corp #characteristic {
+        background-color: #c5ffec;
+        width: 100%;
+    }
+    #corp #pageproduits  {
+       width: 100%;
+    }
+    .formu {
+        margin:0.5%;
+        width: 30%;
+        justify-content: space-between;
+    }
+    #formulaire form{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    .formucheck{
+        margin-top: 3px;
+    }
+    .containing {
+        display: none;
+    }
+    .formutype label{
+        width: 40%;
+    }
+    .formutype input{
+        width: 40%;
+    }
+    .formutype{
+        flex-direction: column;
+    }
+    #recherche {
+        margin-top:2%;
+        margin-left:0%;
+        margin-bottom:02%;
+    }
+    #footerinfos {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        padding-bottom: 20%;
+    }
+    #footerinfos h1{
+        margin-top: 5%;
+    }
+    #footerinfos h1{
+        text-decoration: underline;
+    }
+    #footerinfos #contact h1{
+        text-decoration:none;
+    }
+    .parts hr{
+        display: none;
+    }
+    .parts {
+        width: 85%;
+        text-align: center;
+    }
+    #boutoncontact a{
+        width: 50%;
+        margin-bottom: 1.5%;
+    }
+    #boutoncontact{
+        align-items: center;
+    }
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    #navbar li{
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #search {
+        width: 52%;
+    }
+    #navbar li a {
+        font-size: 14.5px;
+    }
+    #navbar .notright{
+        border-right:none;
+    }
+    #characteristic #recherche {
+        font-size: 17px;
+    }
+    #characteristic .formu p {
+        font-size: 17px;
+    }
+    #characteristic .formu label {
+        font-size: 13.6px;
+    }
+    
+    #characteristic .formucheck p {
+        font-size: 17px;
+    }
+    #characteristic .formucheck label {
+        font-size: 13.6px;
+    }
+    #panier {
+        width: auto;
+        height: 40px;
+    }
+    header input {
+        margin:5%;
+    }
+    
+}
+@media screen and (min-width: 0px) and (max-width: 520px) {
+    #pageproduits .produits {
+        margin: 2px;
+        width: 48%;
+    }
+    .infos{/*infos article*/
+        width: 40%;
+        margin: 5%; 
+    }
+    #corp #pageproduits .infos .name{/*nom des articles*/
+        font-size: 12px;
+        margin: 0px;
+    }
+    #corp #pageproduits .infos .caracproduits{/*caractèristique des articles*/
+        font-style: italic;
+        font-size: 9.6px;
+        margin: 0px;
+    }
+    #corp #pageproduits .infos .price{/*prix des articles*/
+        font-size: 20px;
+        margin: 0px;
+    }
+    #corp #pageproduits button {
+        width: 45%;
+        margin: 2%;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 300px) {
+    #corp #pageproduits .produits {
+        width: 90%;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 430px) {
+    #corp #pageproduits #numpages {/*éléments des numeros*/
+        justify-content:space-evenly;
+    }
+    #corp #pageproduits #numpages .cercle {/*cercle classique*/
+        width: 23.8px;
+        height: 23.8px;
+        margin: 0.2%;
+    }
+    #corp #pageproduits #numpages .cercle:hover {/*passage du curseur*/
+        width: 23.8px;
+        height: 23.8px;
+    }
+    #corp #pageproduits #numpages .fakecercle {/*cercle camoufflé aux extrémités*/
+        width: 23.8px;
+        height: 23.8px;
+        margin: 0.2%;
+    }
+    #corp #pageproduits #numpages .activepage{/*pages actives*/
+        width: 24.44px;
+        height: 24.44px;
+        margin: 0.2%;
+    }
+    #numpages a{
+        font-size: 9px;
+    }
+    #numpages p{
+        font-size: 9px;
+    }
+    
+}
+
+
+
+/*RESPONSIVE -- RESPONSIVE -- RESPONSIVE -- RESPONSIVE*/
